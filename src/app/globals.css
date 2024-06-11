@@ -74,3 +74,13 @@
       @apply bg-background text-foreground;
     }
   }
+
+  @media (min-width: 1060px) {
+    .features-section{
+      @apply list-none grid !grid-cols-3 mt-20  pl-0 ;
+    }
+    
+    .features-section-li {
+      @apply  flex flex-col gap-2  border-t-2 border-zinc-500/30 pt-3 pl-0;
+    }
+  }
