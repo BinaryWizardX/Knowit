@@ -16,6 +16,12 @@ datasource db {
 
 model User {
 
-  id       String   @id @default(cuid())
+  id       String   @id @unique
+  email String @unique
+
+  stripeCustomerId String? @unique
+  stripeSubscriptionId String? @unique
+  stripePriceIde String?
+  stripeCurrentPeriodEnd DateTime?
 
 }

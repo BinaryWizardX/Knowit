@@ -1,9 +1,9 @@
 import Link from "next/link";
 import Image from 'next/image'
 import { MoveRight } from 'lucide-react';
-import NavBar from "./Components/NavBar";
 import { buttonVariants } from "@/components/ui/button";
 import MaxwidthWrapper from "./Components/MaxwidthWrapper";
+import BackgroundGradient from "./Components/BackgroundGradient";
 
 
 
@@ -18,9 +18,11 @@ export default function Home() {
   return (
   <>
 
-  <NavBar/>
+  
  
     <MaxwidthWrapper className="mb-12 mt-28 flex flex-col items-center justify-center text-center sm:mt-40">
+
+      <BackgroundGradient/>
 
       <div className="mx-auto mb-4 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full border border-gray-200 bg-white px-7 py-2 shadow-md backdrop-blur transition-all hover:border-gray-300 hover:bg-white/50">
 
@@ -50,21 +52,10 @@ export default function Home() {
       
     </MaxwidthWrapper>
 
-    <div>
+    <div className="mt-[117px]">
       <div className="relative isolate">
 
-        <div aria-hidden='true' className="absolute blur-3xl transform-gpu overflow-hidden -z-10 -top-[10rem]  md:-top-[20rem] pointer-events-none -left-[14rem] md:-left-[40rem] lg:-left-[20rem]">
-
-          <div style={{
-                clipPath:
-                  'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
-              }} className=" w-[500px]  md:w-[60.125rem] aspect-[1155/678] bg-gradient-to-r from-cyan-500/25 to-blue-500/25 rotate-[20deg] "/>
-
-          
-
-          
-
-        </div>
+        
         <div className="max-w-6xl px-6 lg:px-8 mx-auto">
           <div>
             <div className="bg-gray-600/25 p-2 sm:p-3 md:p-4
@@ -83,10 +74,7 @@ export default function Home() {
         </div>
         <div aria-hidden='true' className="absolute blur-3xl transform-gpu overflow-hidden -z-10 -top-[10rem]  md:-top-[20rem] pointer-events-none -left-[14rem] md:-left-[40rem] lg:-left-[20rem]">
 
-<div style={{
-      clipPath:
-        'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
-    }} className=" w-[500px]  md:w-[60.125rem] aspect-[1155/678] bg-gradient-to-r from-cyan-500/50 to-blue-500/50 rotate-[20deg] "/>
+
 
 
 
